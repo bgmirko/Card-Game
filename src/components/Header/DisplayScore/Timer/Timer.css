@@ -1,0 +1,16 @@
+.Timer{
+    font-size: 22px;
+    color: white;
+}
+
+.Timer label:nth-of-type(2){
+    margin-left: 10px;
+    display: inline-block;
+    width: 90px;
+    text-align: center;
+    padding-right: 3px;
+    background-color: black;
+    border: 1px solid;
+    border-radius: 5px;
+}
+

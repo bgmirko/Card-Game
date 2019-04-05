@@ -1,0 +1,11 @@
+
+.Last_Game{
+    background-color: #16b616;
+    animation: treperi 0.8s infinite;
+}
+
+@keyframes treperi{
+    0% {background-color: #16b616}
+    50% {background-color: #4bce4b}
+    100% {background-color: #16b616}
+}

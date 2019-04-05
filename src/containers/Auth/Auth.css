@@ -1,0 +1,45 @@
+.Auth{
+    height: 100vh;
+    background-image: url("../../assets/img/pozadina.jpg");
+    padding-top: 150px;
+}
+
+.Auth_Box{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 350px;
+    height: 400px;
+    border: 1px solid grey;
+    background-color: #ffffff;
+}
+
+.Auth form{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Auth label{
+    font-size: 15px;
+    color: black;
+    margin-bottom: 5px;   
+}
+
+.Auth label:not(:first-child){
+    margin-top: 15px;
+}
+
+.Auth input:last-of-type{
+    margin-bottom: 25px;
+}
+
+.Auth input{
+    height: 25px;
+    width: 220px;
+}
+
+

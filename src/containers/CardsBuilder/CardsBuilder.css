@@ -1,0 +1,167 @@
+.GamePanel{
+    display: flex;
+    background-image: url("../../assets/img/pozadina.jpg");
+}
+
+.CardsBuilder{
+    display: grid;
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+    margin: auto;
+    padding: 50px 15px 50px 15px;
+    justify-content: center;
+    max-width: 900px;
+    height: 100%;
+    
+}
+
+.ButtonTable{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 200px;
+    background-color: #ffffff;
+    align-items: center;
+    margin: 0;
+}
+
+.Buttons{
+    display: flex;
+    flex-direction: column;
+}
+
+.User_Label{
+    color: #000000;
+    font-size: 35px;
+    margin: 0 0 50px 0;
+}
+
+.SoundIcon{
+    margin-top: 25px;
+    margin: auto;
+    height: 55px;
+    width: 55px;
+
+}
+
+@media screen and (min-width : 1101px) {
+    .GamePanel{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .CardsBuilder{
+        margin: 0 20px 0 0;
+        grid-template-rows: 220px 220px 220px 220px;
+        grid-template-columns: 160px 160px 160px 160px 160px;
+    }
+
+    .ButtonTable{
+        border-radius: 25px;
+        padding: 20px 0 20px 0;
+        top: 50%;
+        width: 250px;
+        background-image: linear-gradient(to bottom right, #ececec, #b8b8b8);
+        border: 2px solid #ffffff;
+    }
+
+    .User_Label{
+        margin: 0 0 30px 0;
+        font-weight: 700;
+    }
+} 
+
+@media screen and (min-width : 1280px) { 
+    .CardsBuilder{
+        margin: 0 50px 0 0;
+    }
+}
+
+@media screen and (max-width : 1200px) { 
+    .CardsBuilder{    
+        grid-auto-rows: 220px;
+        grid-template-columns: repeat(auto-fill, 160px);
+        width: 740px;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width : 1100px) { 
+    .ButtonTable{
+        position: fixed;
+        top:60px;
+        width: 100%;
+        z-index: 100;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 110px;
+        padding-top: 0px;
+    }
+
+    .CardsBuilder{
+        padding: 200px 15px 50px 15px;
+        width: 100%;
+    }
+
+    .User_Label{
+        margin: 6px;
+        font-size: 32px;
+    }
+    
+    .Buttons{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 50px;
+    }
+
+    .SoundIcon{
+        margin: 20px;
+        height: 45px;
+        width: 45px;
+    }
+}
+
+@media screen and (max-width : 900px) {
+
+    .CardsBuilder{
+        margin: 0;
+        grid-auto-rows: 160px;
+        grid-template-columns: repeat(auto-fill, 120px);
+    }
+} 
+
+@media screen and (max-width : 600px) {
+
+    .GamePanel{
+        flex-direction: row;
+    }
+
+    .ButtonTable{
+        height: 85px;
+        align-items: center;
+        margin: 0;
+        border-bottom: 3px solid #17c8d4;
+    }
+
+    .CardsBuilder{
+        padding: 180px 15px 50px 15px;
+        grid-auto-rows: 124px;
+        grid-template-columns: repeat(auto-fill, 90px);
+    }
+
+    .User_Label{
+        font-size: 24px;
+    }
+
+    .SoundIcon{
+        margin: 10px;
+        height: 35px;
+        width: 35px;
+    }
+   
+    .Buttons{
+        height: 30px;
+    }
+} 
+

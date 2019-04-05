@@ -1,0 +1,57 @@
+.Button{
+    width: 180px;
+    height: 50px;
+    background-color: #387732;
+    color: #ffffff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.Button:disabled{
+    background-color: #cc3a3a;    
+}
+
+.Reset{
+    animation: button-alert 1s infinite;
+}
+
+@keyframes button-alert {
+    0%   {background-color: #cc3a3a;}
+    50%   {background-color: #387732;}
+    100%   {background-color: #cc3a3a;}
+}
+
+.Button_Switch{
+    background:none!important;
+    color:inherit;
+    border:none; 
+    padding:0!important;
+    font: inherit;
+    border-bottom:1px solid #444; 
+    cursor: pointer;
+}
+
+@media screen and (max-width : 1100px) { 
+    .Button{
+        width: 110px;
+        height: 40px;
+        margin-bottom: 0;
+        font-size: 20px;
+    }
+
+    .Button:not(:last-of-type){
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width : 600px) { 
+    .Button{
+        width: 80px;
+        height: 30px;
+        font-size: 16px;
+    }
+
+    .Button:not(:last-of-type){
+        margin-right: 10px;
+    }
+}

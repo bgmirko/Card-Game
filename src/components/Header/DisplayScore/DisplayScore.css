@@ -1,0 +1,13 @@
+.DisplayScore{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-width: 1500px;
+}
+
+@media screen and (max-width: 650px){
+    .Hide{
+        display: none;
+    }
+}

@@ -1,0 +1,65 @@
+.Results{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 70px;
+    min-height: 100vh;
+    background-image: url("../../assets/img/pozadina.jpg");
+}
+
+.Results h1{
+    color: #d6deb6;
+    margin-right: 220px;
+    letter-spacing: 3px;
+    font-size: 40px;
+}
+
+.Results table{
+    width: 450px;
+    margin-right: 220px;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border: 2px solid white;
+    box-shadow: 2px 2px 8px 3px #424242;
+}
+
+.Results table th{
+    background-color: #b4b3b3;
+    height: 35px;
+}
+
+.Results table td{
+    text-align: center;
+    height: 30px;
+    width: 150px;;
+}
+
+@media screen and (max-width: 900px){
+    .Results{
+        padding-top: 60px;
+    }
+}
+
+
+@media screen and (max-width: 700px){
+    .Results table{
+        margin-right: 0px;
+    }
+}
+
+@media screen and (max-width: 400px){
+
+    .Results h1{
+        margin-right: 0;
+    }
+
+    .Results table{
+        width: 320px;
+    }
+
+    .Results table td{
+        width: 80px;
+    }
+}
